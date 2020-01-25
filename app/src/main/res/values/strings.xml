@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">NoteApp</string>
+    <string name="app_name">Notes</string>
+    <string name="title">Название</string>
+    <string name="description">Это будет длинное описание для заметки</string>
+    <string name="titleHint">Введите название заметки</string>
+    <string name="descriptionHint">Введите описание...</string>
+    <string name="addBtn">Добавить</string>
+    <string name="settingsTitle">Настройки</string>
+    <string name="searchTitle">Поиск</string>
+    <string name="addNoteTitle">Добавить заметку</string>
 </resources>
