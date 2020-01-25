@@ -1,12 +1,13 @@
-package com.example.noteapp
+package com.example.noteapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.noteapp.R
 
-class MainActivity : AppCompatActivity() {
+class AddNoteActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_add_note)
     }
 }
