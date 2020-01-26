@@ -39,7 +39,7 @@ class NotesListAdapter internal constructor(context: Context, val noteDB: NotesD
         val currentNote = listNote[position]
 
         holder.titleView.text = currentNote.title
-        holder.descriptionView.text = currentNote.title
+        holder.descriptionView.text = currentNote.desc
         holder.deleteItemView.setOnClickListener {
             uiScope.launch {
                 noteDB?.notesDao()?.delete(currentNote)
