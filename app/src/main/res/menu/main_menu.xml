@@ -18,7 +18,7 @@
     <item android:title="@string/addNoteTitle"
         android:id="@+id/action_addbtn"
         android:icon="@drawable/ic_action_add"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         >
 
 

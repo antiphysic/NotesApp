@@ -37,12 +37,12 @@ class AddNoteActivity : AppCompatActivity(), CoroutineScope {
 
 
             if (strTitle.isEmpty()) {
-                titleEt.error = "title required"
+                titleEt.error = "Введите название"
                 titleEt.requestFocus()
                 return@setOnClickListener
             }
             if (strDesc.isEmpty()) {
-                descriptionEt.error = "description required"
+                descriptionEt.error = "Введите описание"
                 descriptionEt.requestFocus()
                 return@setOnClickListener
             }

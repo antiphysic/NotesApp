@@ -36,6 +36,12 @@ class MainActivity : AppCompatActivity() , CoroutineScope {
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        getAllNotes()
     }
 
     override fun onDestroy() {
@@ -43,9 +49,6 @@ class MainActivity : AppCompatActivity() , CoroutineScope {
         mJob.cancel()
     }
 
-    override fun onResume() {
-        super.onResume()
-    }
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
