@@ -2,8 +2,8 @@ package com.example.noteapp.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.ViewGroup
 import android.view.View
+import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.noteapp.R
 import com.example.noteapp.database.Note
@@ -13,6 +13,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+
 
 class NotesListAdapter internal constructor(context: Context, val noteDB: NotesDatabase): RecyclerView.Adapter<NotesListAdapter.ViewHolder>(){
 
@@ -48,6 +49,7 @@ class NotesListAdapter internal constructor(context: Context, val noteDB: NotesD
             }
         }
     }
+
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val titleView = itemView.titleTv

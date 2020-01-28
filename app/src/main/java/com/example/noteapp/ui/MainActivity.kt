@@ -11,6 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.row.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -39,9 +40,11 @@ class MainActivity : AppCompatActivity() , CoroutineScope {
 
     }
 
+
     override fun onResume() {
         super.onResume()
         getAllNotes()
+        updateNotes()
     }
 
     override fun onDestroy() {
@@ -64,7 +67,6 @@ class MainActivity : AppCompatActivity() , CoroutineScope {
         }
         return super.onOptionsItemSelected(item)
     }
-
 
     fun getAllNotes() {
         launch {

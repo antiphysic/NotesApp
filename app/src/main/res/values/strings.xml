@@ -8,4 +8,5 @@
     <string name="settingsTitle">Настройки</string>
     <string name="searchTitle">Поиск</string>
     <string name="addNoteTitle">Добавить заметку</string>
+    <string name="saveBtn">Cохранить</string>
 </resources>
